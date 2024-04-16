@@ -78,72 +78,65 @@ const Footer = () => {
 
   const contents = [
     {
-      title: 'Explore',
-      links: [
-        { title: 'About Us', href: '' },
-        { title: 'Services', href: '' },
-        { title: 'Courses', href: '' },
-        { title: 'Blog', href: '' },
-        { title: 'Contact us', href: '' },
-      ],
-    },
-    {
       title: 'Quick Links',
       links: [
-        { title: 'Contact Us', href: '' },
+        { title: 'About Us', href: '' },
+        { title: 'Team', href: '' },
         { title: 'Pricing', href: '' },
-        { title: 'Terms & Conditions', href: '' },
-        { title: 'Privacy', href: '' },
-        { title: 'Feedbacks', href: '' },
+        { title: 'Blog', href: '' },
+        { title: 'Contact us', href: '' },
       ],
     },
   ];
 
   const posts = [
     {
-      img: '/images/blog1.jpg',
-      date: 'Jan. 18, 2021',
-      author: 'Admin',
-      title: 'Creativity and Inspiration',
-      href: '#',
+      img: '/images/door1.jpg',
     },
     {
-      img: '/images/blog1.jpg',
-      date: 'Jan. 18, 2021',
-      author: 'Admin',
-      title: 'Creativity and Inspiration',
-      href: '#',
+      img: '/images/door2.jpg',
     },
     {
-      img: '/images/blog1.jpg',
-      date: 'Jan. 18, 2021',
-      author: 'Admin',
-      title: 'Creativity and Inspiration',
-      href: '#',
+      img: '/images/door3.jpg',
+    },
+    {
+      img: '/images/door4.jpg',
+    },
+    {
+      img: '/images/door5.jpg',
+    },
+    {
+      img: '/images/door7.jpg',
     },
   ];
   return (
-    <section className='bg-gray-200 px-8 lg:px-0'>
-      <div className='mx-auto my-0 grid max-w-[1200px] grid-cols-1 items-start gap-10 px-8   py-20 sm:grid-cols-2 sm:flex-row sm:gap-16 md:grid-cols-3 md:gap-20 md:gap-y-0 md:px-0 lg:grid-cols-5 lg:gap-x-4'>
-        <div>
+    <section className=''>
+      <div className=' '>
+        <img
+          className='h-[300px]  w-full object-cover'
+          src='/images/remove1.png'
+          alt=''
+        />
+      </div>
+      <div className='grid grid-cols-4 justify-between gap-8 border-t-2 border-dashed bg-[#1A1A1A] p-10 '>
+        <div className='w-[300px]'>
           <div className=' cursor-pointer'>
-            <h2 className='hover:text-primary-400 text-2xl text-black  transition-all md:text-4xl'>
-              TORQBIT
+            <h2 className='hover:text-primary-400 text-2xl text-white  transition-all md:text-4xl'>
+              ZOYA ENTERPRISES
             </h2>
             <p className='text-primary-600 text-[12px] font-[600] md:text-[15px]'>
-              ONLINE EDUCATION & LEARNING
+              UPVC WINDOW & DOOR
             </p>
           </div>
           <p className='pt-8  text-[15px] text-gray-600 md:max-w-[250px] md:text-lg'>
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia
+            We Provide UPVC Window And Doors To Your Dream Home
           </p>
           <div className='flex gap-2 py-6'>
             {socialLinks.map((link, i) => {
               return (
                 <a
                   key={i}
-                  className='hover:bg-primary-800 text-primary-400 group  flex h-10 w-10  items-center justify-center rounded-full bg-white bg-opacity-70  transition-all  '
+                  className='hover:bg-primary-800 text-primary-400 group  flex h-10 w-10  items-center justify-center rounded-full bg-black bg-opacity-70  transition-all  '
                   href={link.href}
                 >
                   {link.icon}
@@ -155,7 +148,7 @@ const Footer = () => {
         {contents.map((content, i) => {
           return (
             <ul key={i}>
-              <li className='text-xl font-[600]'>{content.title}</li>
+              <li className='text-xl font-[600] text-white'>{content.title}</li>
               <div className='pt-8 '>
                 {content.links.map((link, i) => {
                   return (
@@ -177,51 +170,9 @@ const Footer = () => {
             </ul>
           );
         })}
+
         <div>
-          <div className='text-xl font-[600]'>Recent Posts</div>
-          <div className='pt-8'>
-            {posts.map((post, i) => {
-              return (
-                <div key={i} className='flex items-start gap-4 pb-4'>
-                  <img
-                    className='h-16 w-16 rounded object-cover'
-                    src={post.img}
-                    alt=''
-                  />
-                  <div>
-                    <div className='flex cursor-pointer gap-3'>
-                      <div className='text-primary-600 flex items-center gap-1 text-[10px] '>
-                        {' '}
-                        <FontAwesomeIcon
-                          icon={faCalendar}
-                          color='gray'
-                          className='text-primary-600'
-                          size='sm'
-                        />
-                        {post.date}
-                      </div>
-                      <div className='text-primary-600 flex items-center gap-1 text-[10px]'>
-                        {' '}
-                        <FontAwesomeIcon
-                          icon={faUser}
-                          color='gray'
-                          className='text-primary-600'
-                          size='sm'
-                        />
-                        {post.author}
-                      </div>
-                    </div>
-                    <p className='hover:text-primary-600 cursor-pointer pt-2 font-[600] text-gray-600 transition-all md:max-w-[150px]'>
-                      <a href={post.href}>{post.title}</a>
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        <div>
-          <div className='text-xl font-[600]'>Have a Questions?</div>
+          <div className='text-xl font-[600] text-white'>Address</div>
           <div className='pt-8'>
             <div className='item-start flex gap-8'>
               <FontAwesomeIcon
@@ -255,6 +206,22 @@ const Footer = () => {
                 info@yourdomain.com
               </a>
             </div>
+          </div>
+        </div>
+        <div>
+          <div className='text-xl font-[600] text-white'>Flickr Photos</div>
+          <div className='grid grid-cols-3 grid-rows-2 pt-8'>
+            {posts.map((post, i) => {
+              return (
+                <div key={i} className='  pb-4'>
+                  <img
+                    className='h-18 w-20 rounded object-cover'
+                    src={post.img}
+                    alt=''
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -11,28 +11,24 @@ import Book from '@/components/Icons/Book';
 const OnlineLearingBenefits = () => {
   return (
     <>
-
       <section
         className='teal bg-gray-100 px-4 py-20 md:mb-0 md:px-0 md:py-0'
         id='about'
       >
-
-
         <div className='m-auto flex max-w-[1200px] flex-col-reverse items-center justify-between md:flex-row '>
-
           <div>
             <img
               className='hidden h-auto w-auto object-cover md:inline md:h-[800px] md:w-[550px] md:object-cover'
-              src='/images/acad.jpg'
+              src='/images/upvcGlass.jpg'
               alt='testing-image'
             />
           </div>
           <div className='max-w-[500px] '>
-            <h3 className=' text-primary-600 px-8 text-center uppercase md:px-0 '>
+            {/* <h3 className=' text-primary-600 px-8 text-center uppercase md:px-0 '>
               Learn Anything
-            </h3>
+            </h3> */}
             <h1 className='pt-3 text-center  text-[25px] font-medium leading-tight md:text-[40px]'>
-              Benefits About Online Learning Expertise
+              Creative and Modern Design
             </h1>
             <div className='flex flex-col gap-y-4 '>
               <div className=' md:items-centre hover:bg-primary-600 md:items-flex-start  group mt-3 flex cursor-pointer rounded bg-white p-4 transition-all hover:text-white md:flex  md:justify-between md:hover:text-white'>

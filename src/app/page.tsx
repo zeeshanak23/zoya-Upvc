@@ -14,6 +14,9 @@ import OnlineCourse from '@/components/OnlineCourse/OnlineCourse';
 import Testimonial from '@/components/Testimonial/Testimonial';
 
 import FaqSection from '@/components/Faq/FaqSection';
+import UpvcWindow from '@/components/WindowDoor/page';
+import Door from '@/components/Door/page';
+import WeDo from '@/components/WeDo/page';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -61,16 +64,19 @@ export default function HomePage() {
 
       <div className='teal'>
         <Hero banner='/images/herobg.jpg' />
+        <UpvcWindow />
+        <Door />
+        <WeDo banner='/images/weDoBg.jpg' />
         {/* <OnlineLearingBenefits />
 
         <Testimonial />
         {allPost && <Blog morePost={allPost} />}
-      
 
         <Pricing />
         <FaqSection />
         <Contact />
         <Footer /> */}
+        <Footer />
       </div>
     </main>
   );

@@ -39,9 +39,9 @@ const HeroTab = () => {
   ];
   return (
     <>
-      <div className='bg-primary-300 relative z-20 my-5  lg:bg-transparent'>
+      <div className='bg-primary-300 relative z-20 m-auto my-5 w-[1200px] lg:bg-transparent'>
         <nav className='   mx-auto my-0 flex w-full items-center justify-between sm:left-0 sm:max-w-[630px] md:max-w-[760px] lg:max-w-[1400px]  '>
-          <div className='hidden h-[60px]  min-w-[1116px] items-center gap-12 bg-white bg-opacity-5 px-4 py-2 sm:h-[70px]  lg:flex '>
+          <div className='hidden h-[60px]  min-w-[1190px] items-center gap-12 bg-white bg-opacity-5 px-4 py-2 sm:h-[70px]  lg:flex '>
             {tabs.map((tab, i) => {
               return (
                 <a
@@ -59,10 +59,10 @@ const HeroTab = () => {
               );
             })}
           </div>
-          <div className=' bg-primary-600  relative -left-4 hidden h-[70px] min-w-[70px] skew-x-[-20deg] lg:flex'></div>
+          {/*         
           <div className='bg-primary-600 relative left-3 z-20 flex  h-[60px] min-w-[250px] items-center justify-center  pr-7 font-[500] text-white hover:cursor-pointer sm:-left-10 sm:h-[70px] sm:text-xl'>
             GET CERTIFICATE
-          </div>
+          </div> */}
           <div
             onClick={() => {
               setMenuActive(!menuActive);

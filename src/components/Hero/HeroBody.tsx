@@ -16,7 +16,7 @@ const HeroBody = () => {
         </p>
         <div className='mt-8 items-center sm:flex  sm:gap-[5px] sm:pt-0 '>
           <button className='bg-primary-600 mb-5 flex h-14  w-full items-center justify-center gap-2 rounded-[4px] font-bold uppercase text-white sm:mb-0 sm:hover:shadow-xl md:w-[250px] md:px-8  md:text-[15px]'>
-            <span> GET Call now </span>{' '}
+            <span>Call now </span>{' '}
             <FontAwesomeIcon icon={faArrowRight} color='white' size='lg' />
           </button>
         </div>
