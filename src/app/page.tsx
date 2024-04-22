@@ -17,6 +17,8 @@ import FaqSection from '@/components/Faq/FaqSection';
 import UpvcWindow from '@/components/WindowDoor/page';
 import Door from '@/components/Door/page';
 import WeDo from '@/components/WeDo/page';
+import Gallery from '@/components/Gallery/page';
+import EnquiryForm from '@/components/EnquiryForm/page';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -67,15 +69,8 @@ export default function HomePage() {
         <UpvcWindow />
         <Door />
         <WeDo banner='/images/weDoBg.jpg' />
-        {/* <OnlineLearingBenefits />
-
-        <Testimonial />
-        {allPost && <Blog morePost={allPost} />}
-
-        <Pricing />
-        <FaqSection />
-        <Contact />
-        <Footer /> */}
+        {/* <Gallery /> */}
+        <EnquiryForm />
         <Footer />
       </div>
     </main>

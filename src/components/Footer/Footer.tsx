@@ -180,9 +180,8 @@ const Footer = () => {
                 className='text-primary-600 pt-2'
                 size='sm'
               />
-              <p className=' pt-0 text-lg text-gray-600 md:max-w-[200px]'>
-                {' '}
-                203 Fake St. Mountain View, San Francisco, California, USA
+              <p className=' pt-0 text-lg capitalize text-gray-600 md:max-w-[200px]'>
+                Near Vastu vihar, kauwa bandh,barwadda road, dhanbad - 826001
               </p>
             </div>
             <div className='item-start flex gap-8 pt-4'>
@@ -192,7 +191,7 @@ const Footer = () => {
                 size='sm'
               />
               <a className=' hover:text-primary-600 cursor-pointer pt-0 text-lg text-gray-600 md:max-w-[200px]'>
-                +2 392 3929 210
+                +91 7004639271
               </a>
             </div>
             <div className='item-start flex gap-8 pt-4'>
@@ -202,8 +201,7 @@ const Footer = () => {
                 size='sm'
               />
               <a className=' hover:text-primary-600 cursor-pointer pt-0 text-lg text-gray-600 md:max-w-[200px]'>
-                {' '}
-                info@yourdomain.com
+                786zoyaenterprises@gmail.com
               </a>
             </div>
           </div>

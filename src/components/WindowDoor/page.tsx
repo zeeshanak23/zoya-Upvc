@@ -1,24 +1,24 @@
 const UpvcWindow = () => {
   const Item = [
     {
-      photo: 'images/home1.jpg',
-      line: 'Bridon windows have the superior properties for a lasting finish that easy to maintain and never needs painting.Our windows are engineered to reduce exterior noise, making your home a quieter, more comfortable place to live',
+      photo: 'images/door3.jpg',
+      line: 'We have the superior properties for a lasting finish that easy to maintain and never needs painting.Our windows are engineered to reduce exterior noise, making your home a quieter, more comfortable place to live',
       title: 'INNOVATIVE DESIGN',
     },
     {
-      photo: 'images/home1.jpg',
-      line: 'Bridon windows have the superior properties for a lasting finish that easy to maintain and never needs painting.Our windows are engineered to reduce exterior noise, making your home a quieter, more comfortable place to live',
-      title: 'INNOVATIVE DESIGN',
+      photo: 'images/door2.jpg',
+      line: 'We are proud to announce, to have first and the latest technology and automation production which fabricates consistent high quality energy efficient products for all types of double glazed windows and doors.',
+      title: 'CREATIVE BUILD',
     },
     {
-      photo: 'images/home1.jpg',
-      line: 'Bridon windows have the superior properties for a lasting finish that easy to maintain and never needs painting.Our windows are engineered to reduce exterior noise, making your home a quieter, more comfortable place to live',
-      title: 'INNOVATIVE DESIGN',
+      photo: 'images/door5.jpg',
+      line: 'Our uPVC windows and doors are designed to reduce heat loss in cold weather and solar heat buildup during warm weather while sliding & folding windows or doors.',
+      title: 'MULTITYPE WINDOWS & DOORS',
     },
     {
-      photo: 'images/home1.jpg',
-      line: 'Bridon windows have the superior properties for a lasting finish that easy to maintain and never needs painting.Our windows are engineered to reduce exterior noise, making your home a quieter, more comfortable place to live',
-      title: 'INNOVATIVE DESIGN',
+      photo: 'images/door2.jpg',
+      line: 'With our professional windows and doors installation, your house turn a home. Bridon is proud to use uPVC premium materials and the most thermally superior, energy efficient and beautiful dual-panel windows ever built.',
+      title: 'SUPERIOR QUALITY',
     },
   ];
   return (
@@ -38,11 +38,15 @@ const UpvcWindow = () => {
             {Item.map((list, i) => {
               return (
                 <div className='flex flex-col items-center gap-4 ' key={i}>
-                  <img src={list.photo} alt='' />
-                  <h3 className='font-medium hover:text-teal-700'>
+                  <img
+                    className='h-[200px] w-[200px] object-cover'
+                    src={list.photo}
+                    alt=''
+                  />
+                  <h3 className='h-[50px] text-center font-medium hover:text-teal-700'>
                     {list.title}
                   </h3>
-                  <p className=' text-[#888]'>{list.line}</p>
+                  <p className='text-[#888]'>{list.line}</p>
                 </div>
               );
             })}
